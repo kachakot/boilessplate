@@ -95,24 +95,39 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    width: 100%;
-    height: auto;
+    font-family: 'Roboto', serif;
 }
-header {
+.page-header {
     border-top: 6px #d4213d solid;
 }
 .banner {
-    padding: 200px;
+    padding: 150px 220px;
     margin-bottom: 1px;
     background: #fff url(../img/header.png) no-repeat center;
     background-size: cover;
 }
+.banner-iphone {
+    position: absolute;
+    top: 146px;
+    right: 140px;
+}
+.iphone {
+    width: 80%;
+    height: 80%;
+}
 .title {
     display: inline;
+    font-family: 'Gochi Hand', serif;
+    font-size: 60px;
     color: #fff;
 }
 .title .dot {
     color: #d4213d;
+}
+.subtitle {
+    padding-top: 40px;
+    font-size: 24px;
+    color: #fff;
 }
 .icons ul {
     padding-left: 40px;
@@ -121,17 +136,10 @@ header {
     list-style: none;
     display: inline;
 }
-.banner-iphone {
-    position: absolute;
-    top: 122px;
-    right: 140px;
+.features-container li {
+    list-style: none;
+    display: inline;
 }
-.iphone {
-    width: 80%;
-    height: 80%;
-}
-
-
 
 
 
