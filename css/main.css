@@ -94,11 +94,42 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
+body {
+    width: 100%;
+    height: auto;
+}
+header {
+    border-top: 6px #d4213d solid;
+}
+.banner {
+    padding: 200px;
+    margin-bottom: 1px;
+    background: #fff url(../img/header.png) no-repeat center;
+    background-size: cover;
+}
+.title {
+    display: inline;
+    color: #fff;
+}
+.title .dot {
+    color: #d4213d;
+}
+.icons ul {
+    padding-left: 40px;
+}
+.icons li {
+    list-style: none;
+    display: inline;
+}
+.banner-iphone {
+    position: absolute;
+    top: 122px;
+    right: 140px;
+}
+.iphone {
+    width: 80%;
+    height: 80%;
+}
 
 
 
