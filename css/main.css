@@ -1,11 +1,9 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -15,7 +13,6 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -28,12 +25,10 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 /*
  * A better looking default horizontal rule
  */
@@ -46,7 +41,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -61,7 +55,6 @@ svg,
 video {
     vertical-align: middle;
 }
-
 /*
  * Remove default fieldset styles.
  */
@@ -71,7 +64,6 @@ fieldset {
     margin: 0;
     padding: 0;
 }
-
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,7 +71,6 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -90,70 +81,141 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 body {
-    font-family: 'Roboto', serif;
+    line-height: 26px;
+    font-family: Arial, sans-serif;
+    color: #848484;
 }
+p {
+    font-size: 16px;
+    color: #848484;
+}
+blockquote {
+    line-height: 28px;
+    font-size: 18px;
+    font-style: italic;
+}
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+}
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
 .page-header {
-    border-top: 6px #d4213d solid;
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/iphone.png"), url("../img/header.png");
+    background-position: 85% bottom, 50% 50%;
+    background-size: auto auto, cover;
+    background-repeat: no-repeat, no-repeat;
+    border-top: 10px #d4213d solid;
 }
-.banner {
-    padding: 150px 220px;
-    margin-bottom: 1px;
-    background: #fff url(../img/header.png) no-repeat center;
-    background-size: cover;
-}
-.banner-iphone {
-    position: absolute;
-    top: 146px;
-    right: 140px;
-}
-.iphone {
-    width: 80%;
-    height: 80%;
+.header-inner {
+    margin: 220px 190px;
 }
 .title {
-    display: inline;
-    font-family: 'Gochi Hand', serif;
+    margin-bottom: 22px;
+    font-family: 'Gochi Hand', Arial;
     font-size: 60px;
     color: #fff;
 }
 .title .dot {
     color: #d4213d;
 }
+.icons-header {
+    padding: 0;
+}
+.icons-header li {
+    list-style: none;
+    display: inline;
+}
 .subtitle {
     padding-top: 40px;
+    line-height: 32px;
+    font-family: "Roboto", sans-serif;
     font-size: 24px;
+    font-weight: 500;
     color: #fff;
 }
-.icons ul {
-    padding-left: 40px;
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+.main-container {
+    margin: 0;
 }
-.icons li {
+.features {
+    margin: 0 auto;
+    padding: 40px 120px;
+}
+.feature-inner {
+    width: 100%;
+}
+.feature {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.feature p {
+    padding: 0 20px;
+}
+.get-notifed {
+    height: 300px;
+    padding: 40px 120px;
+    background-color: #e3e3e3;
+}
+.get-notifed-newsletter {
+    float: left;
+    width: 50%;
+}
+.get-notifed-video {
+    float: right;
+    width: 50%;
+}
+.testimonials {
+    padding: 40px 120px;
+    text-align: center;
+}
+.icons-media li {
     list-style: none;
     display: inline;
 }
-.features-container li {
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+    padding: 40px 120px;
+    background-color: #e3e3e3;
+}
+.footer-nav-list {
+    text-align: center;
+    font-size: 16px;
+}
+.footer-nav-list li {
     list-style: none;
     display: inline;
+    padding: 0 16px;
 }
-
-
-
-
-
-
-
-
-
-
+.footer-nav-list a {
+    color: #848484;
+    text-decoration: none;
+}
+.footer-nav-list a:hover {
+    color: #d4213d;
+    text-decoration: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
@@ -161,7 +223,6 @@ body {
 .hidden {
     display: none !important;
 }
-
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -177,7 +238,6 @@ body {
     position: absolute;
     width: 1px;
 }
-
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -193,7 +253,6 @@ body {
     position: static;
     width: auto;
 }
-
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -201,7 +260,6 @@ body {
 .invisible {
     visibility: hidden;
 }
-
 /*
  * Clearfix: contain floats
  *
@@ -216,14 +274,15 @@ body {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -233,14 +292,12 @@ body {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -254,66 +311,58 @@ body {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
+        
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
+    
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
+    
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;

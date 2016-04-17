@@ -23,41 +23,86 @@
 
         <!-- Add your site or application content here -->
         <header class="page-header">
-        <div class="banner">
-            <h1 class="title">Notify<span class="title dot">.</span></h1>
-            <div class="subtitle">A great new solution that is going to</br>
-            change your life.</div>
-            <div class="icons">
-                <ul>
+            <div class="header-inner">
+                <h1 class="title">Notify<span class="title dot">.</span></h1>
+                <div class="subtitle">
+                    A great new solution that is going to</br>
+                    change your life.
+                </div>
+                <ul class="icons-header">
                     <li>ic1</li>
                     <li>ic2</li>
                     <li>ic3</li>
                 </ul>
-            </div>
-            <div class="banner-iphone">
-                <img class="iphone" src="img/iphone.png">
+                </div>
             </div>
         </header>
-        <main>
+        <main class="main-container">
             <section class="features">
-                <div class="features-container">
-                    <ul>
-                        <li>Editable Theme
-                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper.</li>
-                        <li>Flat Design
-                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper.</li>
-                        <li>Reach Your Audience
-                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper.</li>
-                    </ul>
+                <div class="features-inner">
+                    <div class="feature">
+                        ic1
+                        <h3>Editable Theme</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.</p>
+                    </div>
+                    <div class="feature">
+                        ic2
+                        <h3>Flat Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla..</p>
+                    </div>
+                    <div class="feature">
+                        ic3
+                        <h3>Reach Your Audience</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.</p>
+                    </div>
                 </div>
             </section>
             <section class="get-notifed">
+                <div class="get-notifed-inner">
+                    <div class="get-notifed-newsletter">
+                        <h3>Get Notified Of Any Updates!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. 
+                        Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit 
+                        risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+                        <form action="index.html" method="post" class="subscribe-form">
+                            <input type="email" name="email" class="subscribe-input" placeholder="Email Address" autofocus>
+                            <button type="submit" class="subscribe-submit">Notify</button>
+                        </form>
+                    </div>
+                    <aside class="get-notifed-video">
+                        video
+                    </aside>     
+                </div>
             </section>
             <section class="testimonials">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”
+                <div class="testimonials-inner">
+                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo 
+                    nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut."</blockquote>
+                    Jane Hunt
+                    <h3>Say Hi & Get In Touch!</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
+                    <ul class="icons-media">
+                        <li>ic1</li>
+                        <li>ic2</li>
+                        <li>ic3</li>
+                        <li>ic4</li>
+                        <li>ic5</li>
+                        <li>ic6</li>
+                    </ul>
+                </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
+            <div class="footer-inner">
+                <ul class="footer-nav-list">
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#press">Press</a></li>
+                    <li><a href="#email">Email</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#privacy-police">Privacy Police</a></li>
+                </ul>
+            </div>
         </footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
