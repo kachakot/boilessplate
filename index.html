@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fontello.css">
         <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -29,10 +30,10 @@
                     A great new solution that is going to</br>
                     change your life.
                 </div>
-                <ul class="icons-header">
-                    <li>ic1</li>
-                    <li>ic2</li>
-                    <li>ic3</li>
+                <ul class="systems">
+                    <li class="system-icon"><a href="#apple" title="iOS"><i class="icon icon-apple icon-l"></i></a></li>
+                    <li class="system-icon"><a href="#android" title="Android"><i class="icon icon-android icon-l"></i></a></li>
+                    <li class="system-icon"><a href="#windows" title="Windows Phone"><i class="icon icon-win8 icon-l"></i></a></li>
                 </ul>
                 </div>
             </div>
@@ -41,17 +42,17 @@
             <section class="features">
                 <div class="features-inner">
                     <div class="feature">
-                        ic1
+                        <div class="feature-icon icon icon-cog icon-xl"></div>
                         <h3>Editable Theme</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.</p>
                     </div>
                     <div class="feature">
-                        ic2
+                        <div class="feature-icon icon icon-star icon-xl"></div>
                         <h3>Flat Design</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla..</p>
                     </div>
                     <div class="feature">
-                        ic3
+                        <div class="feature-icon icon icon-globe icon-xl"></div>
                         <h3>Reach Your Audience</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.</p>
                     </div>
@@ -65,29 +66,29 @@
                         Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit 
                         risusuis ornare luctus id sollicitudin ante lobortis at.</p>
                         <form action="index.html" method="post" class="subscribe-form">
-                            <input type="email" name="email" class="subscribe-input" placeholder="Email Address" autofocus>
-                            <button type="submit" class="subscribe-submit">Notify</button>
+                            <input type="email" name="email" class="subscribe-input" placeholder="Email Address">
+                            <button type="submit" class="subscribe-submit" alt="Wyślij">Notify</button>
                         </form>
                     </div>
                     <aside class="get-notifed-video">
-                        video
+                        <iframe class="video-player" src="https://player.vimeo.com/video/160397656" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </aside>     
                 </div>
             </section>
             <section class="testimonials">
                 <div class="testimonials-inner">
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo 
-                    nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut."</blockquote>
-                    Jane Hunt
+                    <cite>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo 
+                    nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut."</cite>
+                    <p class="author">Jane Hunt</p>
                     <h3>Say Hi & Get In Touch!</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
-                    <ul class="icons-media">
-                        <li>ic1</li>
-                        <li>ic2</li>
-                        <li>ic3</li>
-                        <li>ic4</li>
-                        <li>ic5</li>
-                        <li>ic6</li>
+                    <ul class="social-media">
+                        <li class="social-media-icon"><a href="#twitter" title="twitter"><i class="icon icon-twitter"></i></a></li>
+                        <li class="social-media-icon"><a href="#facebook" title="facebook"><i class="icon icon-facebook"></i></a></li>
+                        <li class="social-media-icon"><a href="#pinterest" title="pinterest"><i class="icon icon-pinterest-circled"></i></a></li>
+                        <li class="social-media-icon"><a href="#gplus" title="google plus"><i class="icon icon-gplus"></i></a></li>
+                        <li class="social-media-icon"><a href="#linkedin" title="linkedin"><i class="icon icon-linkedin"></i></a></li>
+                        <li class="social-media-icon"><a href="#youtube" title="youtube"><i class="icon icon-youtube"></i></a></li>
                     </ul>
                 </div>
             </section>
@@ -95,12 +96,12 @@
         <footer class="footer">
             <div class="footer-inner">
                 <ul class="footer-nav-list">
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#download">Download</a></li>
-                    <li><a href="#press">Press</a></li>
-                    <li><a href="#email">Email</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#privacy-police">Privacy Police</a></li>
+                    <li><a href="#contact" title="kontakt">Contact</a></li>
+                    <li><a href="#download" title="pobierz">Download</a></li>
+                    <li><a href="#press" title="prasa">Press</a></li>
+                    <li><a href="#email" title="napisz do nas">Email</a></li>
+                    <li><a href="#support" title="wsparcie techniczne">Support</a></li>
+                    <li><a href="#privacy-police" title="polityka prywatności">Privacy Police</a></li>
                 </ul>
             </div>
         </footer>
