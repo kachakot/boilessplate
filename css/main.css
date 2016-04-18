@@ -1,11 +1,9 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -15,7 +13,6 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -28,12 +25,10 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 /*
  * A better looking default horizontal rule
  */
@@ -46,7 +41,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -61,7 +55,6 @@ svg,
 video {
     vertical-align: middle;
 }
-
 /*
  * Remove default fieldset styles.
  */
@@ -71,7 +64,6 @@ fieldset {
     margin: 0;
     padding: 0;
 }
-
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,7 +71,6 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -90,85 +81,75 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 body {
     line-height: 26px;
     font-family: Arial, sans-serif;
     color: #848484;
 }
-
 p {
-    font-family: Arial, sans-serif;
     font-size: 16px;
     color: #848484;
 }
-
-cite {
-    line-height: 28px;
-    font-size: 18px;
-    font-style: italic;
-}
-
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    color: #000;
+    color: rgb(34, 34, 34);
 }
-
 /* icons */
+
 .icon {
     font-family: 'fontello';
+    font-style: normal;
     font-weight: normal;
     color: #fff;
 }
-
 .icon-s {
     font-size: 16px;
 }
-
 .icon-m {
     font-size: 22px;
 }
-
 .icon-l {
-    font-size: 28px;
+    font-size: 24px;
 }
-
 .icon-xl {
     font-size: 54px;
 }
-/* ==========================================================================
-   Header
-   ========================================================================== */
 .page-header {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     background-image: url('../img/iphone.png'), url('../img/header.png');
     background-position: 85% bottom, 50% 50%;
     background-size: auto auto, cover;
     background-repeat: no-repeat, no-repeat;
     border-top: 10px #d4213d solid;
 }
-
-.header-inner {
-    width: 60%;
-    margin: 220px auto;
+.inner {
+    width: 1000px;
+    margin: 0 auto;
 }
+/* ==========================================================================
+   Header
+   ========================================================================== */
 
-.title {
+.header-content {
+    padding-top: 140px;
+    padding-left: 90px;
+}
+.logo {
     margin-bottom: 22px;
-    font-family: 'Gochi Hand', Arial;
+    font-family: 'Gochi Hand', sans-serif;
     font-size: 60px;
     color: #fff;
 }
-.title .dot {
+.dot {
     color: #d4213d;
 }
-
 .subtitle {
     padding-top: 40px;
     line-height: 32px;
@@ -177,179 +158,234 @@ h3 {
     font-weight: 500;
     color: #fff;
 }
-
 .systems {
     padding: 0;
+    display: block;
 }
-
-.systems li {
-    list-style: none;
-    display: inline;
-}
-
 .system-icon {
+    display: inline-block;
+    margin-right: 12px;
+    line-height: 50px;
+    text-align: center;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.6;
+    border-radius: 50%;
 }
-
+.system-icon a {
+    height: 50px;
+    width: 50px;
+    display: block;
+    cursor: url('../img/cursor.png'), auto;
+}
+.system-icon:hover {
+    background-color: #d4213d;
+    opacity: 1;
+}
 /* ==========================================================================
    Main
    ========================================================================== */
+
 .main-container {
     margin: 0;
 }
-
 /* features */
+
 .features {
-    padding: 40px 0;
+    margin: 30px auto 10px auto;
+    padding: 20px 0;
 }
-
-.features-inner {
-    width: 75%;
-    margin: 0 auto;
+.features-content:after {
+    clear: both;
+    display: block;
+    margin: 0;
+    content: '.';
 }
-
 .feature {
-    display: inline-block;
-    width: 30%;
+    display: block;
+    width: calc((100% - 60px)/3);
     text-align: center;
-    padding-right: 4%;
+    float: left;
+    margin-right: 30px;
+    box-sizing: border-box;
 }
-
 .feature:last-child {
-    padding-right: 0;
+    margin-right: 0;
 }
-
+.feature h3 {
+    margin-bottom: 20px;
+}
 .feature p {
     padding: 0;
     font-weight: 400;
 }
-
 .feature-icon {
+    width: 98px;
+    height: 98px;
+    margin: 0 auto;
+    border-radius: 50%;
+    line-height: 98px;
     background-color: #d4213d;
 }
-
 /* get notified */
+
 .get-notifed {
-    height: 300px;
+    min-height: 300px;
     padding: 40px 0;
     background-color: #e3e3e3;
 }
-
-.get-notifed-inner {
-    width: 75%;
-    margin: 0 auto;
+.get-notifed h3 {
+    margin-bottom: 20px;
 }
-
 /* newsletter */
+
 .get-notifed-newsletter {
     float: left;
     width: 50%;
 }
-
+.get-notifed-newsletter p {
+    text-align: left;
+}
+.subscribe-form {
+    position: relative;
+    margin-top: 30px;
+}
 .subscribe-input {
-    width: 300px;
+    width: 260px;
     height: 55px;
-    padding: 2px 10px;
+    padding: 2px 24px;
     border: none;
     border-radius: 15px 0 0 15px;
+    font-weight: normal;
+    font-size: 18px;
 }
-
 .subscribe-submit {
-    width: 150px;
+    display: inline;
+    position: absolute;
+    padding: 2px;
+    width: 140px;
     height: 59px;
     background-color: #d4213d;
     border: none;
     border-radius: 0 15px 15px 0;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 22px;
     color: #fff;
 }
-
+.subscribe-submit:hover {
+    background-color: #ab0720;
+    transition: all 0.75s ease-in;
+}
 /* video player */
+
 .get-notifed-video {
     float: right;
     width: 50%;
 }
-
 .video-player {
-    width: 450px;
+    width: 400px;
     height: 260px;
     float: right;
     margin: 24px auto;
     border-radius: 5px;
 }
-
 /* testimonials */
+
 .testimonials {
-    padding: 40px 120px;
     text-align: center;
 }
-
-.testimonials-inner {
-    width: 75%;
+.testimonials-content {
+    width: 900px;
     margin: 0 auto;
+    padding-top: 30px;
 }
+.testimonials h3 {
+    margin-bottom: 20px;
+}
+/* cite */
 
+.cite {
+    line-height: 28px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+}
 .author {
+    display: block;
+    padding-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #000;
+    color: rgb(46, 46, 46);
 }
+.carousel {
+    padding: 20px 0;
+}
+.get-in-touch p {
+    font-family: "HelveticaNeue", sans-serif;
+}
+/* social media */
 
- /* social media */
 .social-media {
-    padding: 0;
-
-}.social-media  li {
+    padding-bottom: 30px;
+    display: block;
+}
+.social-media ul {
     list-style: none;
-    display: inline;
 }
-
+.social-media li {
+    display: inline-block;
+}
 .social-media-icon {
-    width: 34px;
     height: 34px;
+    width: 34px;
+    margin-right: 4px;
+    line-height: 34px;
+    text-align: center;
     background-color: #d4d4d4;
+    border-radius: 50%;
+    transition: 1.5s;
 }
-
+.social-media-icon a {
+    cursor: url('../img/cursor.png'), auto;
+    height: 34px;
+    width: 34px;
+}
+.social-media-icon:hover {
+    background-color: #df596e;
+    transform: rotateY(360deg);
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
+
 .footer {
-    padding: 40px 120px;
+    padding: 30px;
     text-align: center;
     background-color: #e3e3e3;
 }
-
-.footer-inner {
-    width: 75%;
-    margin: 0 auto;
-}
-
 /* footer navigation */
+
 .footer-nav-list {
     font-size: 16px;
 }
-
-.footer-nav-list li {
+.footer-nav-list ul {
     list-style: none;
+}
+.footer-nav-list li {
     display: inline;
     padding: 0 16px;
 }
-
 .footer-nav-list a {
     color: #848484;
-    text-decoration: none; 
+    text-decoration: none;
 }
-
 .footer-nav-list a:hover {
     color: #d4213d;
     text-decoration: none;
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
@@ -357,7 +393,6 @@ h3 {
 .hidden {
     display: none !important;
 }
-
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -373,7 +408,6 @@ h3 {
     position: absolute;
     width: 1px;
 }
-
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -389,7 +423,6 @@ h3 {
     position: static;
     width: auto;
 }
-
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -397,7 +430,6 @@ h3 {
 .invisible {
     visibility: hidden;
 }
-
 /*
  * Clearfix: contain floats
  *
@@ -412,14 +444,15 @@ h3 {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -429,14 +462,12 @@ h3 {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -450,66 +481,58 @@ h3 {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
+        
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
+    
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
+    
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
